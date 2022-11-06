@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluee"
+    tools:context=".guru.HomeActivity">
+
+    <include layout="@layout/label1" />
+    <!--    background-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/logosplash"
+        android:backgroundTint="@color/cyan"
+        android:backgroundTintMode="multiply"
+        android:padding="285dp">
+    </RelativeLayout>
+
+    <!--    jadwal-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="195dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="70dp"
+        android:background="@drawable/relative_rounded">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Jadwal Mengajar"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/viewjadwal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginVertical="170dp"
+            android:layout_marginEnd="20dp"
+            android:text="Lihat Jadwal"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
+
+
+    <!--    hari-->
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="110dp"
+        android:background="@drawable/relative_rounded2">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginVertical="9dp"
+            android:layout_marginStart="20dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_baseline_calendar_today_24">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tgljadwal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="7dp"
+            android:text="Tanggal"
+            android:textSize="12dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/harijadwal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:text="HARI"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:autoSizeTextType="uniform"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/jam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="90dp"
+            android:text="jam"
+            android:textSize="15dp"
+            android:textStyle="bold">
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="110dp"
+        android:background="@drawable/relative_rounded3"
+        android:layout_marginStart="180dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="status"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/klsmapel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:text="MAPEL"
+            android:textAlignment="center"
+            android:autoSizeTextType="uniform"
+            android:textSize="40dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/klsjadwal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="80dp"
+            android:text="Kelas | VII A"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/jamm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="100dp"
+            android:text="09.00 - 11.00"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            android:textStyle="bold"></TextView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:text="UPT SMP NEGERI 2 GADINGREJO"
+        android:textAlignment="center"
+        android:textSize="10dp">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:layout_marginVertical="275dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/relative_rounded"
+        android:id="@+id/user">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="20dp"
+            android:src="@drawable/book">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="105dp"
+            android:text="List Guru"
+            android:textAlignment="center"
+            android:textSize="15dp">
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="275dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="150dp"
+        android:background="@drawable/relative_rounded"
+        android:id="@+id/siswa">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="20dp"
+            android:src="@drawable/children">
+        </ImageView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="105dp"
+            android:text="Siswa"
+            android:textAlignment="center"
+            android:textSize="15dp">
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/absensi"
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:layout_marginVertical="275dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="270dp"
+        android:background="@drawable/relative_rounded">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="20dp"
+            android:src="@drawable/classs">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="105dp"
+            android:text="Absensi"
+            android:textAlignment="center"
+            android:textSize="15dp">
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttonscan"
+        android:layout_width="402dp"
+        android:layout_height="164dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginVertical="40dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
+        android:background="@drawable/relative_rounded"
+        android:paddingBottom="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/qr"></ImageView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="205dp"
+        android:padding="10dp"
+        android:text="Klik dibawah untuk Scan"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold">
+    </TextView>
+
+</RelativeLayout>

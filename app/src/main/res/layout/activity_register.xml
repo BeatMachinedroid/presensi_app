@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/bluee">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/logosplash"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="175dp"
+        android:text="Silakan Register"
+        android:textSize="20dp"></TextView>
+
+    <EditText
+        android:id="@+id/ed_nip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="210dp"
+        android:width="20dp"
+        android:background="@drawable/relative_rounded"
+        android:hint="NIP"
+        android:padding="10dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/ed_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="260dp"
+        android:width="20dp"
+        android:background="@drawable/relative_rounded"
+        android:hint="nama"
+        android:padding="10dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/ed_nohp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="310dp"
+        android:background="@drawable/relative_rounded"
+        android:hint="No hp"
+        android:padding="10dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/ed_jk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="360dp"
+        android:background="@drawable/relative_rounded"
+        android:hint="Jenis kelamin"
+        android:padding="10dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/ed_agama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="410dp"
+        android:background="@drawable/relative_rounded"
+        android:hint="Agama"
+        android:padding="10dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/ed_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="460dp"
+        android:background="@drawable/relative_rounded"
+        android:hint="Email"
+        android:padding="10dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="510dp"
+        android:background="@drawable/relative_rounded"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:padding="10dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginVertical="555dp"
+        android:padding="10dp"
+        android:text="Anda sudah mempunyai akun"
+        android:textColor="@color/yellow"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="90dp"
+        android:layout_marginVertical="590dp"
+        android:background="@drawable/relative_rounded"
+        android:padding="10dp"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textSize="20dp">
+
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="UPT SMP NEGERI 2 GADINGREJO"
+        android:textSize="10dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

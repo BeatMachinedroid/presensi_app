@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluee"
+    tools:context=".Admin.UpdateJadwalActivity">
+
+    <include layout="@layout/label_admin2"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update data"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="75dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/logosplash"
+        android:backgroundTint="@color/cyan"
+        android:backgroundTintMode="multiply"
+        android:padding="285dp">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp">
+        <EditText
+            android:id="@+id/id"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/relative_rounded"
+            android:hint="nama"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:enabled="false">
+        </EditText>
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/relative_rounded"
+            android:hint="nama"
+            android:padding="10dp"
+            android:textSize="20dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/mapel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="50dp"
+            android:background="@drawable/relative_rounded"
+            android:hint="Mapel"
+            android:padding="10dp"
+            android:textSize="20dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/kelas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="100dp"
+            android:background="@drawable/relative_rounded"
+            android:hint="Kelas"
+            android:padding="10dp"
+            android:textSize="20dp"></EditText>
+
+
+        <EditText
+            android:id="@+id/hari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="150dp"
+            android:background="@drawable/relative_rounded"
+            android:hint="Hari"
+            android:padding="10dp"
+            android:textSize="20dp"></EditText>
+
+        <EditText
+            android:id="@+id/jam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="200dp"
+            android:background="@drawable/relative_rounded"
+            android:hint="jam"
+            android:padding="10dp"
+            android:textSize="20dp"></EditText>
+
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="270dp"
+            android:background="@drawable/relative_rounded"
+            android:padding="10dp"
+            android:text="Update"
+            android:textColor="@color/black"
+            android:textSize="20dp"></Button>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="UPT SMP NEGERI 2 GADINGREJO"
+        android:textSize="10dp" />
+</RelativeLayout>

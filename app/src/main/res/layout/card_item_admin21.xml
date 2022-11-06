@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="3dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardElevation="3dp"
+    app:cardMaxElevation="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="378dp"
+        android:layout_height="130dp">
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginVertical="30dp"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginStart="330dp"
+            android:src="@drawable/delete">
+        </ImageView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/cdid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/cdnama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama siswa"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cdnis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nis"
+                android:textSize="15sp"
+                android:maxLines="2"
+                android:textColor="@color/bluee"/>
+
+            <TextView
+                android:id="@+id/cdjk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="jk"
+                android:maxLines="2"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:id="@+id/cddd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="jk"
+                android:maxLines="2"
+                android:textColor="@color/yellow"/>
+
+            <TextView
+                android:id="@+id/cdket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="keterangan"
+                android:maxLines="2"
+                android:textColor="@color/cyan"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluee"
+    tools:context=".Admin.CreateGuruActivity">
+
+    <include layout="@layout/label_admin2"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="Create data"
+        android:textAllCaps="true"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/logosplash"
+        android:backgroundTint="@color/cyan"
+        android:backgroundTintMode="multiply"
+        android:padding="285dp"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/nip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/relative_rounded"
+            android:hint="nip"
+            android:padding="10dp"
+            android:textSize="20dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="50dp"
+            android:background="@drawable/relative_rounded"
+            android:hint="Nama"
+            android:padding="10dp"
+            android:textSize="20dp"></EditText>
+
+        <EditText
+            android:id="@+id/nohp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="100dp"
+            android:background="@drawable/relative_rounded"
+            android:hint="No Hp"
+            android:padding="10dp"
+            android:textSize="20dp"></EditText>
+
+
+        <EditText
+            android:id="@+id/jk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="150dp"
+            android:background="@drawable/relative_rounded"
+            android:hint="Jenis Kelamin"
+            android:padding="10dp"
+            android:textSize="20dp"></EditText>
+
+        <EditText
+            android:id="@+id/agama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="200dp"
+            android:background="@drawable/relative_rounded"
+            android:hint="Agama"
+            android:padding="10dp"
+            android:textSize="20dp"></EditText>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="250dp"
+            android:background="@drawable/relative_rounded"
+            android:hint="email"
+            android:padding="12dp"
+            android:textSize="20dp"></EditText>
+
+        <EditText
+            android:id="@+id/role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="305dp"
+            android:background="@drawable/relative_rounded"
+            android:hint="role"
+            android:padding="10dp"
+            android:textSize="20dp"></EditText>
+
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="355dp"
+            android:background="@drawable/relative_rounded"
+            android:hint="Password"
+            android:padding="10dp"
+            android:textSize="20dp"></EditText>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="410dp"
+            android:background="@drawable/relative_rounded"
+            android:padding="10dp"
+            android:text="Create"
+            android:textColor="@color/black"
+            android:textSize="20dp"></Button>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="UPT SMP NEGERI 2 GADINGREJO"
+        android:textSize="10dp" />
+</RelativeLayout>

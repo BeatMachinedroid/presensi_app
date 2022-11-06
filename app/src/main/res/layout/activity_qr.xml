@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QrActivity"
+    tools:ignore="MissingClass"
+    android:background="@color/bluee">
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:autoFocusButtonColor="@color/white"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="@color/white"
+        app:flashButtonVisible="true"
+        app:maskColor="#6C000000" />
+
+    <ImageView
+        android:id="@+id/backqr"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/scanner_view"
+        android:background="@drawable/back"
+        />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scanner_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Arahkan ke qrcode"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scanner_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Arahkan ke qrcode"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/ekelas"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/relative_rounded"
+        android:hint="kelas"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:paddingStart="10dp" />
+
+    <EditText
+        android:id="@+id/emapel"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ekelas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/relative_rounded"
+        android:hint="mapel"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:paddingStart="10dp"/>
+
+    <Button
+        android:id="@+id/btn_absen"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emapel"
+        android:background="@drawable/relative_rounded3"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="Absen"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
