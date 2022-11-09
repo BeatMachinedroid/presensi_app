@@ -9,18 +9,18 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
 
-    private static Retrofit retrofit;
     public static Retrofit getClient(){
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.level(HttpLoggingInterceptor.Level.BODY);
         OkHttpClient client = new OkHttpClient.Builder().addInterceptor(interceptor).build();
 //        Gson gson = new GsonBuilder().serializeNulls().create();
-            retrofit = new Retrofit.Builder()
+        //                   ubah ip sesuai dengan laptop
+        Retrofit retrofit = new Retrofit.Builder()
 //                   ubah ip sesuai dengan laptop
-                    .baseUrl("https://yohanesseptian.000webhostapp.com/api/")
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .client(client)
-                    .build();
+                .baseUrl("http://192.168.121.149/Laravel-Api/public/api/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .client(client)
+                .build();
 
         return retrofit;
     }

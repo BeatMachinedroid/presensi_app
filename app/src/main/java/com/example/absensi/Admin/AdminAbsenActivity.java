@@ -71,7 +71,7 @@ public class AdminAbsenActivity extends AppCompatActivity {
             public void onResponse(Call<ResponseAbsensi> call, Response<ResponseAbsensi> response) {
                 boolean status = response.body().isStatus();
                 String pesan = response.body().getMessage();
-                Toast.makeText(AdminAbsenActivity.this, "status :" +status+"| pesan :" +pesan, Toast.LENGTH_SHORT).show();
+                Toast.makeText(AdminAbsenActivity.this, "success", Toast.LENGTH_SHORT).show();
                 dataAbsensiList = response.body().getData();
                 adapterAbsensi = new AdapterAdminAbsensi(AdminAbsenActivity.this,dataAbsensiList);
                 recyclerView.setAdapter(adapterAbsensi);

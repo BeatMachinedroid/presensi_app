@@ -243,7 +243,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginVertical="105dp"
-            android:text="Absensi"
+            android:text="Presensi"
             android:textAlignment="center"
             android:textSize="15dp">
         </TextView>

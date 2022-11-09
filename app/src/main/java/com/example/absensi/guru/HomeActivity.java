@@ -40,7 +40,7 @@ public class HomeActivity extends AppCompatActivity{
     String Hari;
     ImageView logout ;
 
-    private static final int REQUEST_CODE_QR_SCAN = 101;
+
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
