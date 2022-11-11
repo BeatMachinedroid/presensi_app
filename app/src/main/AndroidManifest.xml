@@ -24,20 +24,6 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".Admin.CreateGuruActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".Admin.UpdateGuruActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".Admin.AdminJadwalActivity"
             android:exported="false">
             <meta-data
@@ -68,7 +54,10 @@
             android:name=".Admin.AdminAbsenActivity"
             android:exported="false" />
         <activity
-            android:name=".Admin.ListAdminActivity"
+            android:name=".Admin.ListpresensiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".guru.ListActivity"
             android:exported="false" />
         <activity
             android:name=".Admin.AdminSiswaActivity"
@@ -78,9 +67,6 @@
             android:exported="false" />
         <activity
             android:name=".guru.JadwalActivity"
-            android:exported="false" />
-        <activity
-            android:name=".guru.ListGuruActivity"
             android:exported="false" />
         <activity
             android:name=".guru.SiswaActivity"

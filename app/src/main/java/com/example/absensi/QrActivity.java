@@ -106,25 +106,47 @@ public class QrActivity extends AppCompatActivity{
                                         kelas.setText(kelass);
                                         jam.setText(gettime());
 
-                                        DataAbsensi absensi = new DataAbsensi();
-                                        absensi.setIdSiswa(idsiswa);
-                                        absensi.setKelas(kelass);
-                                        absensi.setMapel(mapell);
-                                        absensi.setKeterangan("masuk");
-                                        Call<ResponseAbsensi> absensiCall = ApiClient.getUserService().absen(absensi);
+                                        Call<ResponseAbsensi> absensiCall = ApiClient.getUserService().absensii();
                                         absensiCall.enqueue(new Callback<ResponseAbsensi>() {
                                             @Override
                                             public void onResponse(Call<ResponseAbsensi> call, Response<ResponseAbsensi> response) {
-                                                if (response.isSuccessful()) {
-                                                    Toast.makeText(QrActivity.this, "gagal", Toast.LENGTH_SHORT).show();
+                                                List<DataAbsensi> dataAbsensis = response.body().getData();
+                                                for (DataAbsensi absensi : dataAbsensis){
+                                                    int idsiswa1 = absensi.getIdSiswa();
+                                                    if (idsiswa == idsiswa1){
+                                                        int id = absensi.getId();
+                                                        DataAbsensi absensis = new DataAbsensi();
+                                                        absensis.setIdSiswa(idsiswa);
+                                                        absensis.setKelas(kelass);
+                                                        absensis.setMapel(mapell);
+                                                        absensis.setKeterangan("masuk");
+                                                        Call<ResponseAbsensi> responseAbsensiCall = ApiClient.getUserService().qrabsen(id,absensis);
+                                                        responseAbsensiCall.enqueue(new Callback<ResponseAbsensi>() {
+                                                            @Override
+                                                            public void onResponse(Call<ResponseAbsensi> call, Response<ResponseAbsensi> response) {
+                                                                if (response.isSuccessful()){
+                                                                    Toast.makeText(QrActivity.this,"success", Toast.LENGTH_SHORT).show();
+                                                                }else{
+                                                                    Toast.makeText(QrActivity.this,"gagal, check lagi", Toast.LENGTH_SHORT).show();
+                                                                }
+                                                            }
+
+                                                            @Override
+                                                            public void onFailure(Call<ResponseAbsensi> call, Throwable t) {
+                                                                Toast.makeText(QrActivity.this,"success", Toast.LENGTH_SHORT).show();
+                                                            }
+                                                        });
+                                                    }
                                                 }
                                             }
 
                                             @Override
                                             public void onFailure(Call<ResponseAbsensi> call, Throwable t) {
-                                                Toast.makeText(QrActivity.this, "sukses", Toast.LENGTH_SHORT).show();
+
                                             }
                                         });
+//
+
                                     }
                                 }
                             }

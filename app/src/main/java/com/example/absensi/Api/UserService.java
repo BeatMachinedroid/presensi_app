@@ -106,8 +106,8 @@ public interface UserService {
     Call<ResponseJadwal> adminjadwal();
 
     @POST("admin/jadwal")
-    Call<ResponseGuru> tambahjadwal(
-            @Body DataGuru dataGuru
+    Call<ResponseJadwal> tambahjadwal(
+            @Body DataJadwal dataJadwal
     );
 
     @GET("admin/jadwal/{id_guru}")
@@ -134,9 +134,9 @@ public interface UserService {
 
     //admin absensi
 
-    @GET("admin/absensi/{id_guru}")
-    Call<ResponseAbsensi> upabsen(
-            @Path("id_guru") int id_guru
+    @GET("admin/absensi/{keterangan}")
+    Call<ResponseAbsensi> getabsen(
+            @Path("keterangan") String keterangan
     );
 
     @POST("admin/absensi/delete/{id}")
@@ -145,8 +145,9 @@ public interface UserService {
     );
 
     //admin qr code
-    @POST("admin/absensi")
-    Call<ResponseAbsensi> absen(
+    @PUT("admin/absensi/{id}")
+    Call<ResponseAbsensi> qrabsen(
+            @Path("id") int id,
             @Body DataAbsensi absensi
             );
 

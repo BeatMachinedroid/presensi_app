@@ -14,6 +14,7 @@ import com.example.absensi.R;
 import com.example.absensi.models.absensi.DataAbsensi;
 import com.example.absensi.models.absensi.Siswa;
 
+import java.text.DateFormat;
 import java.util.List;
 
 public class AdapterAbsensi extends RecyclerView.Adapter<AdapterAbsensi.holderAbsensi>{
@@ -45,7 +46,7 @@ public class AdapterAbsensi extends RecyclerView.Adapter<AdapterAbsensi.holderAb
         holder.tmapel.setText("Mapel : "+dataAbsensi.getMapel());
         holder.tjk.setText("Alamat : "+dataAbsensi.getSiswa().getAlamat());
         holder.tketr.setText("keterangan : "+dataAbsensi.getKeterangan());
-        holder.tjam.setText("jam "+dataAbsensi.getCreatedAt());
+        holder.tjam.setText("waktu : "+dataAbsensi.getUpdatedAt());
     }
 
     @Override

@@ -37,7 +37,7 @@ public class HomeActivity extends AppCompatActivity{
     RelativeLayout buttonscan, absensi, guru, siswa;
     TextView viewjadwal,tgljadwal,harijadwal,datejam;
     TextView klsmapel, klsjadwal, namauser, jamm;
-    String Hari;
+    String Harii;
     ImageView logout ;
 
 
@@ -56,7 +56,7 @@ public class HomeActivity extends AppCompatActivity{
         String [] splitdate = formatedate.split(",");
         tgljadwal.setText(splitdate[1]);
         harijadwal.setText(splitdate[0]);
-        String hari = harijadwal.getText().toString();
+        String Hari = harijadwal.getText().toString();
 //         time
         datejam.setText(getTime());
 
@@ -70,11 +70,10 @@ public class HomeActivity extends AppCompatActivity{
         namauser.setText("Wellcome |"+sp.getString(LoginActivity.Name, null));
 
 
-        Call<ResponseJadwal> jadwalCall = ApiClient.getUserService().getjadwal(hari);
+        Call<ResponseJadwal> jadwalCall = ApiClient.getUserService().getjadwal(Hari);
         jadwalCall.enqueue(new Callback<ResponseJadwal>() {
             @Override
             public void onResponse(Call<ResponseJadwal> call, Response<ResponseJadwal> response) {
-                if (response.isSuccessful()){
                     List<DataJadwal> jadwals = response.body().getData();
                     for (DataJadwal dataJadwal : jadwals) {
                         String mapel, kelas, jam, hari;
@@ -82,15 +81,19 @@ public class HomeActivity extends AppCompatActivity{
                         kelas = "" + dataJadwal.getKelas();
                         jam = "" + dataJadwal.getJam();
                         hari = "" + dataJadwal.getHari();
-                        Hari = harijadwal.getText().toString();
+                        Harii = harijadwal.getText().toString();
 
                             klsjadwal.setText("Kelas : " + kelas);
                             klsmapel.setText(mapel);
                             jamm.setText(jam);
-
+                            if (response.isSuccessful()) {
+                                if (hari.equals(Hari)) {
+                                    Toast.makeText(HomeActivity.this, "success", Toast.LENGTH_SHORT).show();
+                                }
+                            }
                     }
 
-                }
+
             }
 
             @Override
@@ -166,7 +169,7 @@ public class HomeActivity extends AppCompatActivity{
         guru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, ListGuruActivity.class);
+                Intent intent = new Intent(HomeActivity.this, ListActivity.class);
                 startActivity(intent);
                 finish();
             }

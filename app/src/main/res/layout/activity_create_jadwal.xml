@@ -112,7 +112,7 @@
             android:layout_marginVertical="270dp"
             android:background="@drawable/relative_rounded"
             android:padding="10dp"
-            android:text="Update"
+            android:text="Create"
             android:textColor="@color/black"
             android:textSize="20dp"></Button>
 

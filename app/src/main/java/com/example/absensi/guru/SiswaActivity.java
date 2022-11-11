@@ -72,7 +72,7 @@ public class SiswaActivity extends AppCompatActivity {
                 boolean status = response.body().isStatus();
                 String pesan = response.body().getMessage();
 
-                Toast.makeText(SiswaActivity.this, "status : " + status +"| pesan :" +pesan, Toast.LENGTH_SHORT).show();
+                Toast.makeText(SiswaActivity.this, "success", Toast.LENGTH_SHORT).show();
                 dataSiswaList = response.body().getData();
                 adaptersiswa = new Adapterdata(SiswaActivity.this, dataSiswaList);
                 recyclerView.setAdapter(adaptersiswa);

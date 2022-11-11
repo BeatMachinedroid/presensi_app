@@ -88,7 +88,7 @@ public class CreateJadwalActivity extends AppCompatActivity {
                                 dataJadwal.setIdGuru(id_guru);
                                 dataJadwal.setHari(ehari);
                                 dataJadwal.setJam(ejam);
-                                Call<ResponseJadwal> update = ApiClient.getUserService().upjadwal(id, dataJadwal);
+                                Call<ResponseJadwal> update = ApiClient.getUserService().tambahjadwal(dataJadwal);
                                 update.enqueue(new Callback<ResponseJadwal>() {
                                     @Override
                                     public void onResponse(Call<ResponseJadwal> call, Response<ResponseJadwal> response) {

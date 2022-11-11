@@ -56,8 +56,6 @@ public class AdminAbsenActivity extends AppCompatActivity {
         });
 
 
-
-
         recyclerView = findViewById(R.id.rabsen1);
         layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false);
         recyclerView.setLayoutManager(layoutManager);

@@ -17,7 +17,7 @@ public class ApiClient {
         //                   ubah ip sesuai dengan laptop
         Retrofit retrofit = new Retrofit.Builder()
 //                   ubah ip sesuai dengan laptop
-                .baseUrl("http://192.168.121.149/Laravel-Api/public/api/")
+                .baseUrl("http://192.168.222.149/Laravel-Api/public/api/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build();

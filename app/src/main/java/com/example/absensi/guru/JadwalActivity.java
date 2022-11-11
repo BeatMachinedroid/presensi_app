@@ -69,7 +69,7 @@ public class JadwalActivity extends AppCompatActivity {
             public void onResponse(Call<ResponseJadwal> call, Response<ResponseJadwal> response) {
                 boolean status = response.body().isStatus();
                 String pesan = response.body().getMessage();
-                Toast.makeText(JadwalActivity.this, "status :"+status+"| pesan :"+pesan, Toast.LENGTH_SHORT).show();
+                Toast.makeText(JadwalActivity.this, "success", Toast.LENGTH_SHORT).show();
                 dataJadwalList = response.body().getData();
                 adapterJadwal = new AdapterJadwal(JadwalActivity.this,dataJadwalList);
                 recyclerView.setAdapter(adapterJadwal);

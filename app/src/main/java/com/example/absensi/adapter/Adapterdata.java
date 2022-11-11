@@ -42,22 +42,22 @@ public class Adapterdata extends RecyclerView.Adapter<Adapterdata.holderData>{
     public void onBindViewHolder(@NonNull holderData holder, int position) {
         DataSiswa dataSiswa = dataSiswaList.get(position);
         holder.tid.setText(String.valueOf(dataSiswa.getId()));
-        holder.tnama.setText("Nama   : "+dataSiswa.getNama());
+        holder.tnama.setText("Nama : "+dataSiswa.getNama());
         holder.tnis.setText("Nis    : "+dataSiswa.getNis());
         holder.tnisn.setText("Nisn   : "+dataSiswa.getNisn());
         holder.tjk.setText("jenis  : "+dataSiswa.getJk());
         holder.lahir.setText("TTL    : "+dataSiswa.getTempatLahir()+" , "+dataSiswa.getTglLahir());
         holder.talm.setText("Alamat : "+dataSiswa.getAlamat());
         holder.no.setText("No Ortu: "+dataSiswa.getNoHpOrtu());
-        holder.imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String url = "https://api.whatsapp.com/send?phone=+62"+dataSiswa.getNoHpOrtu();
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(url));
-                context.startActivity(intent);
-            }
-        });
+//        holder.imageView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                String url = "https://api.whatsapp.com/send?phone=+62"+dataSiswa.getNoHpOrtu();
+//                Intent intent = new Intent(Intent.ACTION_VIEW);
+//                intent.setData(Uri.parse(url));
+//                context.startActivity(intent);
+//            }
+//        });
     }
 
     @Override
@@ -67,11 +67,11 @@ public class Adapterdata extends RecyclerView.Adapter<Adapterdata.holderData>{
 
     public class holderData extends RecyclerView.ViewHolder{
         TextView tid, tnama, tnis, tjk, talm, tnisn, no, lahir;
-        ImageView imageView;
+
 
         public holderData(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.call);
+
             tid = itemView.findViewById(R.id.cdid);
             tnama = itemView.findViewById(R.id.cdnama);
             tnis = itemView.findViewById(R.id.cdnis);

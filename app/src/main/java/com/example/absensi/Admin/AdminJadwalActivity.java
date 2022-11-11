@@ -73,7 +73,7 @@ public class AdminJadwalActivity extends AppCompatActivity {
             public void onResponse(Call<ResponseJadwal> call, Response<ResponseJadwal> response) {
                 boolean status = response.body().isStatus();
                 String pesan = response.body().getMessage();
-                Toast.makeText(AdminJadwalActivity.this, "status :"+status+"| pesan :"+pesan, Toast.LENGTH_SHORT).show();
+                Toast.makeText(AdminJadwalActivity.this, "success", Toast.LENGTH_SHORT).show();
                 dataJadwalList = response.body().getData();
                 adapterJadwal = new AdapterAdminJadwal(AdminJadwalActivity.this,dataJadwalList);
                 recyclerView.setAdapter(adapterJadwal);

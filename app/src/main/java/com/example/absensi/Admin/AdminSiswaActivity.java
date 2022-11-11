@@ -52,7 +52,7 @@ public class AdminSiswaActivity extends AppCompatActivity {
         btn_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminSiswaActivity.this, CreateGuruActivity.class);
+                Intent intent = new Intent(AdminSiswaActivity.this, CreateSiswaActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -71,7 +71,7 @@ public class AdminSiswaActivity extends AppCompatActivity {
             public void onResponse(Call<ResponseSiswa> call, Response<ResponseSiswa> response) {
                 boolean status = response.body().isStatus();
                 String pesan = response.body().getMessage();
-                Toast.makeText(AdminSiswaActivity.this, "status : " + status +"| pesan :" +pesan, Toast.LENGTH_SHORT).show();
+                Toast.makeText(AdminSiswaActivity.this, "success", Toast.LENGTH_SHORT).show();
                 dataSiswaList = response.body().getData();
                 adaptersiswa =  new AdapterAdminSiswa(AdminSiswaActivity.this,dataSiswaList);
                 recyclerView.setAdapter(adaptersiswa);

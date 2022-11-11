@@ -12,7 +12,7 @@
 
     <RelativeLayout
         android:layout_width="378dp"
-        android:layout_height="130dp">
+        android:layout_height="150dp">
 
         <ImageView
             android:id="@+id/delete"
@@ -79,6 +79,14 @@
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
                 android:text="keterangan"
+                android:maxLines="2"
+                android:textColor="@color/cyan"/>
+            <TextView
+                android:id="@+id/cdjam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="jam"
                 android:maxLines="2"
                 android:textColor="@color/cyan"/>
         </LinearLayout>
